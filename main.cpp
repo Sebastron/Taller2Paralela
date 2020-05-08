@@ -1,9 +1,11 @@
 #include <iostream>
 #include <fstream>
+#include <stdlib.h>
 #include <cstdlib>
 #include <ctime>
-#include <string>
+#include <string.h>
 #include <sstream>
+#include "db.h"
 
 using namespace std;
 

@@ -45,10 +45,13 @@
 
 
 # Environment 
+CXX = g++
+CXXFLAGS = -std=c++ll -g3 -wall -lm -fopenmp
 MKDIR=mkdir
 CP=cp
 CCADMIN=CCadmin
 
+LIBS = -lm -fopenmp -lpq
 
 # build
 build: .build-post
@@ -59,7 +62,14 @@ build: .build-post
 .build-post: .build-impl
 # Add your post 'build' code here...
 
+db.o: directorios db.c
+	$(CXX) $(CXXFLAGS) -c db.c -o build/db.o
 
+main.o: directorios main.cpp
+	$(CXX) $(CXXFLAGS) -c main.cpp -o build/main.o
+
+all: clean main.o db.o
+	$(CXX) $(CXXFLAGS) -o build/main.o  build/db.o $(LIBS)
 # clean
 clean: .clean-post
 
