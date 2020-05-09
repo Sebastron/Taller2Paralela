@@ -26,9 +26,9 @@ extern "C" {
  * @param password contraseña del usuario
  * @return  objeto conexion
  */
-#define DBSERVER "192.168.1.94" //No olvidar cambiar su ip del postgresql
+#define DBSERVER "192.168.1.98" //No olvidar cambiar su ip del postgresql
 #define DBPUERTO 5432
-#define DBNAME "dbpsu"
+#define DBNAME "psudb"
 #define DBUSER "psu"
 #define DBPASSWORD "sebastian1996" //No olvidar cambiar la contraseña
 

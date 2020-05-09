@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurationDescriptor version="100">
+  <logicalFolder name="root" displayName="root" projectFiles="true" kind="ROOT">
+    <logicalFolder name="SourceFiles"
+                   displayName="Source Files"
+                   projectFiles="true">
+      <logicalFolder name="Taller2Paralela"
+                     displayName="Taller2Paralela"
+                     projectFiles="true"
+                     root="..">
+        <itemPath>../db.h</itemPath>
+        <itemPath>../main.cpp</itemPath>
+      </logicalFolder>
+    </logicalFolder>
+    <logicalFolder name="TestFiles"
+                   displayName="Test Files"
+                   projectFiles="false"
+                   kind="TEST_LOGICAL_FOLDER">
+    </logicalFolder>
+    <logicalFolder name="ExternalFiles"
+                   displayName="Important Files"
+                   projectFiles="false"
+                   kind="IMPORTANT_FILES_FOLDER">
+      <itemPath>/home/sebastiangarridov/Desktop/Talleres/t2paralela/Taller2Paralela/Makefile</itemPath>
+      <itemPath>../dist/Taller2Paralela</itemPath>
+    </logicalFolder>
+  </logicalFolder>
+  <sourceRootList>
+    <Elem>..</Elem>
+  </sourceRootList>
+  <projectmakefile></projectmakefile>
+  <confs>
+    <conf name="Default" type="0">
+      <toolsSet>
+        <compilerSet>default</compilerSet>
+        <dependencyChecking>false</dependencyChecking>
+        <rebuildPropChanged>false</rebuildPropChanged>
+      </toolsSet>
+      <flagsDictionary>
+        <element flagsID="0"
+                 commonFlags="-mtune=generic -march=x86-64 -std=c++11 -fopenmp -fstack-protector-strong"/>
+      </flagsDictionary>
+      <codeAssistance>
+      </codeAssistance>
+      <makefileType>
+        <makeTool>
+          <buildCommandWorkingDir>/home/sebastiangarridov/Desktop/Talleres/t2paralela/Taller2Paralela</buildCommandWorkingDir>
+          <buildCommand>${MAKE} -f Makefile</buildCommand>
+          <cleanCommand>${MAKE} -f Makefile clean</cleanCommand>
+          <executablePath>../dist/Taller2Paralela</executablePath>
+          <ccTool>
+            <incDir>
+              <pElem>/usr/include/postgresql</pElem>
+              <pElem>..</pElem>
+            </incDir>
+            <preprocessorList>
+              <Elem>_OPENMP=201511</Elem>
+              <Elem>_REENTRANT=1</Elem>
+              <Elem>__REGISTER_PREFIX__=</Elem>
+              <Elem>__STRICT_ANSI__=1</Elem>
+              <Elem>__USER_LABEL_PREFIX__=</Elem>
+              <Elem>__cplusplus=201103L</Elem>
+              <Elem>__cpp_constexpr=200704</Elem>
+            </preprocessorList>
+          </ccTool>
+        </makeTool>
+        <preBuild>
+          <preBuildCommandWorkingDir>.</preBuildCommandWorkingDir>
+          <preBuildCommand></preBuildCommand>
+        </preBuild>
+      </makefileType>
+      <item path="../main.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+    </conf>
+  </confs>
+</configurationDescriptor>

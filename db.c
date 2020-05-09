@@ -4,7 +4,7 @@ PGconn* dbconnect(char* servidor, int puerto, char* nombredb, char* usuario, cha
 {
     PGconn* conexion = NULL;
     char* uri = (char *) calloc(255, sizeof (char));
-    snprintf(stderr, 250, "host='%s port='%d' dbname='%s' user='%s' password='%s'", servidor, puerto, nombredb, usuario, password );
+    snprintf(uri, 250, "host='%s' port='%d' dbname='%s' user='%s' password='%s'", servidor, puerto, nombredb, usuario, password );
     conexion = PQconnectdb(uri);
     if(PQstatus(conexion) == CONNECTION_BAD){
         fprintf(stderr, "\n Error al conectar al servidor: %s", PQerrorMessage(conexion));
