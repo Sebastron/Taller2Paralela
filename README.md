@@ -7,4 +7,4 @@ Observación:
 
 3) No olvidar cambiar la ip de postgrest del DBSERVER correspondiente en su equipo y también la contraseña del base de datos DBPASSWORD, desde el archivo "db.h".
 
-Saludos compañeros y profesor, seguiremos esforzando para seguir aprendiendo.
+Saludos compañeros del grupo y profesor, seguiremos esforzando para seguir aprendiendo.
